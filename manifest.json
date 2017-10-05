@@ -1,0 +1,22 @@
+
+{
+  "name": "Octopus Dashboard Size Fixer",
+  "version": "1.0.1",
+  "description": "Fixes Octopus table size on the dashboard page.",
+  "icons": {
+    "48": "octopus_48.png",
+    "128": "octopus_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://dvod1.dtc.corp/ABTDeploy/app",
+                  "https://octopus.dtc.corp/ABTDeploy/app",
+                  "https://dvod1.dtc.corp/app",
+                  "https://octopus.dtc.corp/app"],
+      "css": ["octopus_sizer.css"],
+      "all_frames": true
+    }
+  ],
+  "manifest_version": 2,
+  "permissions": []
+}
